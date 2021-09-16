@@ -1,0 +1,33 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    avoid_print: false
+    prefer_single_quotes: true
+    sort_constructors_first: true
+    avoid_classes_with_only_static_members: false
+    lines_longer_than_80_chars: true
+    avoid_empty_else: true
+    avoid_relative_lib_imports: true
+    avoid_types_as_parameter_names: true
+    control_flow_in_finally: true
+    empty_statements: true
+    iterable_contains_unrelated_type: true
+    list_remove_unrelated_type: true
+    no_duplicate_case_values: true
+    no_logic_in_create_state: true
+    prefer_void_to_null: true
+    unrelated_type_equality_checks: true
+    use_key_in_widget_constructors: true
+    always_declare_return_types: true
+    always_require_non_null_named_parameters: true
+    avoid_function_literals_in_foreach_calls: true
+    camel_case_extensions: true
+    await_only_futures: true
+    empty_catches: true
+    file_names: true
+    library_names: true
+    package_names: true
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
