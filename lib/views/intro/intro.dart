@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../constants.dart';
 import '../../dummy_data/intro_data.dart';
+import '../auth/sign_in/sign_in.dart';
 import 'components/intro_content.dart';
 
 class IntroView extends StatefulWidget {
@@ -51,7 +52,9 @@ class _IntroViewState extends State<IntroView> {
               ),
               const SizedBox(height: defaultSpacing),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushNamed(SignInView.routeName);
+                },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: const [
