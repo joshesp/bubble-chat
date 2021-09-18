@@ -4,8 +4,10 @@ import '../../../components/primary_button/primary_button.dart';
 import '../../../components/secondary_button/secondary_button.dart';
 import '../../../components/text_field/text_field.dart';
 import '../../../constants.dart';
+import '../../../tabs/tabs.dart';
 import '../components/image_logo.dart';
 import '../request_password/request_password.dart';
+import '../sign_up/sign_up.dart';
 
 class SignInView extends StatelessWidget {
   const SignInView({Key? key}) : super(key: key);
@@ -60,14 +62,18 @@ class SignInView extends StatelessWidget {
               const Spacer(),
               PrimaryButtonComponent(
                 text: 'Sign in',
-                actionPressed: () {},
+                actionPressed: () {
+                  Navigator.of(context).pushNamed(TabsView.routeName);
+                },
               ),
               const SizedBox(
                 height: defaultSpacing / 2,
               ),
               SecondaryButtonComponent(
                 text: 'Create account',
-                actionPressed: () {},
+                actionPressed: () {
+                  Navigator.of(context).pushNamed(SignUpView.routeName);
+                },
               ),
             ],
           ),

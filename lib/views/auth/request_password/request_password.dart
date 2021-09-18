@@ -5,10 +5,11 @@ import '../../../components/secondary_button/secondary_button.dart';
 import '../../../components/text_field/text_field.dart';
 import '../../../constants.dart';
 import '../components/image_logo.dart';
+import '../update_password/update_password.dart';
 
 class RequestPasswordView extends StatelessWidget {
   const RequestPasswordView({Key? key}) : super(key: key);
-  static const routeName = 'requestPassword';
+  static const routeName = '/requestPassword';
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +46,10 @@ class RequestPasswordView extends StatelessWidget {
               ),
               PrimaryButtonComponent(
                 text: 'Request password',
-                actionPressed: () {},
+                actionPressed: () {
+                  Navigator.of(context)
+                      .pushReplacementNamed(UpdatePasswordView.routeName);
+                },
               ),
               const SizedBox(
                 height: defaultSpacing / 2,
