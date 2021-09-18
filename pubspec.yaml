@@ -15,6 +15,7 @@ dependencies:
 
   cupertino_icons: ^1.0.2
   flutter_svg: ^0.22.0
+  flutter_native_splash: ^1.2.3
 
 dev_dependencies:
   flutter_test:
@@ -37,3 +38,9 @@ flutter:
           weight: 700
         - asset: assets/fonts/Comfortaa-Light.ttf
           weight: 300
+
+flutter_native_splash:
+  color: "#7437AA"
+  image: assets/images/splash.png
+  #color_dark: "#202328"
+  fullscreen: true
