@@ -20,8 +20,7 @@ ThemeData lightThemeData(BuildContext context) {
     iconTheme: const IconThemeData(color: lightColor),
     textTheme: TextTheme(
       headline4: textStyleLightTheme,
-      headline5: textStyleLightTheme,
-      subtitle1: textStyleLightTheme,
+      headline5: textStyleLightTheme.copyWith(fontWeight: FontWeight.w700),
       bodyText1: textStyleLightTheme.copyWith(fontSize: 16.0),
       bodyText2: textStyleLightTheme,
       button: textStyleLightTheme,
