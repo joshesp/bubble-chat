@@ -57,15 +57,17 @@ class _IntroViewState extends State<IntroView> {
                 },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
-                  children: const [
+                  children: [
                     Text(
-                      'Skip',
-                      style: TextStyle(
+                      (introData.length - 1) == currentSlide
+                          ? 'Continue'
+                          : 'Skip',
+                      style: const TextStyle(
                         fontWeight: FontWeight.w700,
                         fontSize: 16.0,
                       ),
                     ),
-                    Icon(Icons.navigate_next)
+                    const Icon(Icons.navigate_next)
                   ],
                 ),
               ),
