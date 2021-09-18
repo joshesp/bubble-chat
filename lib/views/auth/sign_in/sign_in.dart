@@ -5,6 +5,7 @@ import '../../../components/secondary_button/secondary_button.dart';
 import '../../../components/text_field/text_field.dart';
 import '../../../constants.dart';
 import '../components/image_logo.dart';
+import '../request_password/request_password.dart';
 
 class SignInView extends StatelessWidget {
   const SignInView({Key? key}) : super(key: key);
@@ -42,7 +43,10 @@ class SignInView extends StatelessWidget {
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context)
+                        .pushNamed(RequestPasswordView.routeName);
+                  },
                   child: const Text(
                     'Forgot your password?',
                     style: TextStyle(
