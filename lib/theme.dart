@@ -12,6 +12,21 @@ const textStyleDarkTheme = TextStyle(
   color: Colors.white,
 );
 
+const decorationContainerModalSheet = BoxDecoration(
+  color: Colors.white,
+  borderRadius: BorderRadius.only(
+    topLeft: Radius.circular(defaultSpacing),
+    topRight: Radius.circular(defaultSpacing),
+  ),
+);
+
+const paddingModalSheet = EdgeInsets.fromLTRB(
+  defaultSpacing,
+  defaultSpacing * 2,
+  defaultSpacing,
+  defaultSpacing / 2,
+);
+
 ThemeData lightThemeData(BuildContext context) {
   return ThemeData.light().copyWith(
     primaryColor: primaryColor,
