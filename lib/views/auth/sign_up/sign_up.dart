@@ -66,8 +66,8 @@ class SignUpView extends StatelessWidget {
                     const VerficationSmsModal(),
                   ).then((value) {
                     print('Testing Value: $value');
-                    Navigator.of(context)
-                        .pushReplacementNamed(TabsView.routeName);
+                    Navigator.of(context).pushNamedAndRemoveUntil(
+                        TabsView.routeName, (route) => false);
                   });
                 },
               ),

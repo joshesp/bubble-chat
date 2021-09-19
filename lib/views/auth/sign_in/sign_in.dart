@@ -63,7 +63,8 @@ class SignInView extends StatelessWidget {
               PrimaryButtonComponent(
                 text: 'Sign in',
                 actionPressed: () {
-                  Navigator.of(context).pushNamed(TabsView.routeName);
+                  Navigator.of(context).pushNamedAndRemoveUntil(
+                      TabsView.routeName, (route) => false);
                 },
               ),
               const SizedBox(
