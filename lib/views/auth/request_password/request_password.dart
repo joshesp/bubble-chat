@@ -4,8 +4,10 @@ import '../../../components/primary_button/primary_button.dart';
 import '../../../components/secondary_button/secondary_button.dart';
 import '../../../components/text_field/text_field.dart';
 import '../../../constants.dart';
+import '../../../helpers/modal_helper.dart';
 import '../components/image_logo.dart';
 import '../update_password/update_password.dart';
+import '../verification_sms/verification_sms.dart';
 
 class RequestPasswordView extends StatelessWidget {
   const RequestPasswordView({Key? key}) : super(key: key);
@@ -47,8 +49,14 @@ class RequestPasswordView extends StatelessWidget {
               PrimaryButtonComponent(
                 text: 'Request password',
                 actionPressed: () {
-                  Navigator.of(context)
-                      .pushReplacementNamed(UpdatePasswordView.routeName);
+                  modalBottomSheet(
+                    context,
+                    const VerficationSmsModal(),
+                  ).then((value) {
+                    print('Testing Value: $value');
+                    Navigator.of(context)
+                        .pushReplacementNamed(UpdatePasswordView.routeName);
+                  });
                 },
               ),
               const SizedBox(

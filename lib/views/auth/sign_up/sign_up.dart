@@ -4,8 +4,10 @@ import '../../../components/primary_button/primary_button.dart';
 import '../../../components/secondary_button/secondary_button.dart';
 import '../../../components/text_field/text_field.dart';
 import '../../../constants.dart';
+import '../../../helpers/modal_helper.dart';
 import '../../../tabs/tabs.dart';
 import '../components/image_logo.dart';
+import '../verification_sms/verification_sms.dart';
 
 class SignUpView extends StatelessWidget {
   const SignUpView({Key? key}) : super(key: key);
@@ -59,7 +61,14 @@ class SignUpView extends StatelessWidget {
               PrimaryButtonComponent(
                 text: 'Sign up',
                 actionPressed: () {
-                  Navigator.of(context).pushNamed(TabsView.routeName);
+                  modalBottomSheet(
+                    context,
+                    const VerficationSmsModal(),
+                  ).then((value) {
+                    print('Testing Value: $value');
+                    Navigator.of(context)
+                        .pushReplacementNamed(TabsView.routeName);
+                  });
                 },
               ),
               const SizedBox(
