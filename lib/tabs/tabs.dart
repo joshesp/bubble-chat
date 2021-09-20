@@ -1,7 +1,9 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
+import '../../components/user_avatar/user_avatar.dart';
 import '../../constants.dart';
+import 'messages/messages.dart';
 
 class TabsView extends StatefulWidget {
   const TabsView({Key? key}) : super(key: key);
@@ -14,7 +16,7 @@ class TabsView extends StatefulWidget {
 class _TabsViewState extends State<TabsView> {
   int _currPageIndex = 0;
   final List<Map<String, dynamic>> _pages = [
-    {'title': 'Messages', 'page': const Center()},
+    {'title': 'Messages', 'page': const MessagesView()},
     {'title': 'Contacts', 'page': const Center()},
     {'title': 'My profile', 'page': const Center()}
   ];
@@ -60,10 +62,10 @@ class _TabsViewState extends State<TabsView> {
         color: _currPageIndex == 1 ? Colors.white : primaryColor,
         size: 28,
       ),
-      Icon(
-        Icons.account_circle,
-        color: _currPageIndex == 2 ? Colors.white : primaryColor,
-        size: 28,
+      UserAvatarComponent(
+        imageUrl: 'assets/images/user-pics/image-8.png',
+        radius: 15,
+        showBorder: _currPageIndex != 2,
       )
     ];
   }
