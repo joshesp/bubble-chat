@@ -36,6 +36,7 @@ ThemeData lightThemeData(BuildContext context) {
     textTheme: TextTheme(
       headline4: textStyleLightTheme,
       headline5: textStyleLightTheme.copyWith(fontWeight: FontWeight.w700),
+      headline6: textStyleLightTheme,
       bodyText1: textStyleLightTheme.copyWith(fontSize: 16.0),
       bodyText2: textStyleLightTheme,
       button: textStyleLightTheme,
