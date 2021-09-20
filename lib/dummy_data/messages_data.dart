@@ -1,6 +1,6 @@
 // ignore_for_file: lines_longer_than_80_chars
 
-const messagesListData = [
+const List<Map<String, dynamic>> messagesListData = [
   {
     'user': 'Silvia Hernández',
     'active': true,
@@ -79,40 +79,40 @@ const messagesListData = [
   }
 ];
 
-const lastActivityList = [
+const List<Map<String, dynamic>> lastActivityList = [
   {
-    'user': 'Katia Mendez',
+    'username': 'katia',
     'userId': 2,
     'active': true,
     'image': 'assets/images/user-pics/image-2.png'
   },
   {
-    'user': 'Juan Castro',
+    'username': 'juan',
     'userId': 6,
     'active': true,
     'image': 'assets/images/user-pics/image-6.png'
   },
   {
-    'user': 'Emilly Carl',
+    'username': 'emilly_carl',
     'userId': 4,
     'active': true,
     'image': 'assets/images/user-pics/image-4.png'
   },
   {
-    'user': 'John Mac',
+    'username': 'johnMac',
     'userId': 7,
     'active': true,
     'image': 'assets/images/user-pics/image-7.png'
   },
   {
-    'user': 'Silvia Hernández',
+    'username': 'silvia_Hernandez',
     'userId': 1,
     'active': true,
     'image': 'assets/images/user-pics/image-1.png'
   }
 ];
 
-const chatMessages = [
+const List<Map<String, dynamic>> chatMessages = [
   {
     'message':
         'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock',
