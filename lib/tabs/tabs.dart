@@ -47,6 +47,18 @@ class _TabsViewState extends State<TabsView> {
           });
         },
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(
+          _currPageIndex == 0
+              ? Icons.chat_bubble
+              : _currPageIndex == 1
+                  ? Icons.person_add
+                  : Icons.logout,
+          color: Colors.white,
+        ),
+        backgroundColor: _currPageIndex == 2 ? dangerColor : primaryColor,
+      ),
     );
   }
 
