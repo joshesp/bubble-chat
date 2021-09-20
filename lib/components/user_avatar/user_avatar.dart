@@ -9,12 +9,14 @@ class UserAvatarComponent extends StatelessWidget {
     required this.radius,
     this.showBorder = false,
     this.showStatus = false,
+    this.isActive = false,
   }) : super(key: key);
 
   final String imageUrl;
   final double radius;
   final bool showBorder;
   final bool showStatus;
+  final bool isActive;
 
   @override
   Widget build(BuildContext context) {
@@ -36,12 +38,13 @@ class UserAvatarComponent extends StatelessWidget {
               width: 16,
               height: 16,
               decoration: BoxDecoration(
-                  color: successColor,
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                    color: Theme.of(context).scaffoldBackgroundColor,
-                    width: 2,
-                  )),
+                color: isActive ? successColor : dangerColor,
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Theme.of(context).scaffoldBackgroundColor,
+                  width: 2,
+                ),
+              ),
             ),
           ),
       ],
