@@ -7,10 +7,12 @@ class PrimaryButtonComponent extends StatelessWidget {
     Key? key,
     required this.text,
     required this.actionPressed,
+    this.size = double.infinity,
   }) : super(key: key);
 
   final String text;
   final VoidCallback actionPressed;
+  final double size;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +22,7 @@ class PrimaryButtonComponent extends StatelessWidget {
         text,
         style: const TextStyle(
           color: Colors.white,
-          fontSize: 18,
+          fontSize: 17,
         ),
       ),
       style: ElevatedButton.styleFrom(
@@ -30,7 +32,7 @@ class PrimaryButtonComponent extends StatelessWidget {
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(defaultSpacing)),
         ),
-        minimumSize: const Size(double.infinity, 40),
+        minimumSize: Size(size, 40),
       ),
     );
   }
