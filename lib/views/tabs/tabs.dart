@@ -5,6 +5,7 @@ import '../../components/user_avatar/user_avatar.dart';
 import '../../constants.dart';
 import 'contacts/contacts.dart';
 import 'messages/messages.dart';
+import 'profile/profile.dart';
 
 class TabsView extends StatefulWidget {
   const TabsView({Key? key}) : super(key: key);
@@ -19,7 +20,7 @@ class _TabsViewState extends State<TabsView> {
   final List<Map<String, dynamic>> _pages = [
     {'title': 'Messages', 'page': const MessagesView()},
     {'title': 'Contacts', 'page': const ContactsView()},
-    {'title': 'My profile', 'page': const Center()}
+    {'title': 'My profile', 'page': const ProfileView()}
   ];
 
   @override
@@ -48,18 +49,7 @@ class _TabsViewState extends State<TabsView> {
           });
         },
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(
-          _currPageIndex == 0
-              ? Icons.chat_bubble
-              : _currPageIndex == 1
-                  ? Icons.person_add
-                  : Icons.logout,
-          color: Colors.white,
-        ),
-        backgroundColor: _currPageIndex == 2 ? dangerColor : primaryColor,
-      ),
+      floatingActionButton: floatButtom(),
     );
   }
 
@@ -81,6 +71,21 @@ class _TabsViewState extends State<TabsView> {
         showBorder: _currPageIndex != 2,
       )
     ];
+  }
+
+  FloatingActionButton floatButtom() {
+    return FloatingActionButton(
+      onPressed: () {},
+      child: Icon(
+        _currPageIndex == 0
+            ? Icons.chat_bubble
+            : _currPageIndex == 1
+                ? Icons.person_add
+                : Icons.logout,
+        color: Colors.white,
+      ),
+      backgroundColor: _currPageIndex == 2 ? dangerColor : primaryColor,
+    );
   }
 
   AppBar appBar(BuildContext context) {
