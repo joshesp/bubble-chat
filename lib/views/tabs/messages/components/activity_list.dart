@@ -30,7 +30,7 @@ class ActivityListComponent extends StatelessWidget {
                       '@' +
                           truncateWithEllipsis(
                               5, lastActivityList[index]['username']),
-                      style: Theme.of(context).textTheme.bodyText1,
+                      style: Theme.of(context).textTheme.bodyText2,
                     ),
                   ],
                 ),
