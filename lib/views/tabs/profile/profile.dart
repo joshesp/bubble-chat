@@ -20,10 +20,11 @@ class _ProfileViewState extends State<ProfileView> {
     return Column(
       children: [
         const SizedBox(height: defaultSpacing * 3),
-        const UserAvatarComponent(
+        UserAvatarComponent(
           imageUrl: 'assets/images/user-pics/image-8.png',
           radius: 50,
           showBorder: true,
+          onAction: () {},
         ),
         const SizedBox(height: defaultSpacing / 2),
         Text(
