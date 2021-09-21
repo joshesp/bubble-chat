@@ -1,4 +1,4 @@
-const contactsList = [
+const List<Map<String, dynamic>> contactsList = [
   {
     'user': 'Silvia Hernández',
     'active': true,

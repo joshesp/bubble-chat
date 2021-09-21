@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../components/user_avatar/user_avatar.dart';
 import '../../constants.dart';
+import 'contacts/contacts.dart';
 import 'messages/messages.dart';
 
 class TabsView extends StatefulWidget {
@@ -17,7 +18,7 @@ class _TabsViewState extends State<TabsView> {
   int _currPageIndex = 0;
   final List<Map<String, dynamic>> _pages = [
     {'title': 'Messages', 'page': const MessagesView()},
-    {'title': 'Contacts', 'page': const Center()},
+    {'title': 'Contacts', 'page': const ContactsView()},
     {'title': 'My profile', 'page': const Center()}
   ];
 
