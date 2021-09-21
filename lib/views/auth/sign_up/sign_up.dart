@@ -5,7 +5,7 @@ import '../../../components/secondary_button/secondary_button.dart';
 import '../../../components/text_field/text_field.dart';
 import '../../../constants.dart';
 import '../../../helpers/modal_helper.dart';
-import '../../../tabs/tabs.dart';
+import '../../tabs/tabs.dart';
 import '../components/image_logo.dart';
 import '../verification_sms/verification_sms.dart';
 

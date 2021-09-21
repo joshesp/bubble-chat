@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../components/user_avatar/user_avatar.dart';
-import '../../../constants.dart';
+import '../../../../components/user_avatar/user_avatar.dart';
+import '../../../../constants.dart';
 
 class MessageItemComponent extends StatelessWidget {
   const MessageItemComponent({

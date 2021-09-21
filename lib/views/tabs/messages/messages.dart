@@ -1,7 +1,7 @@
 import 'package:bubble_chat/dummy_data/messages_data.dart';
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
+import '../../../constants.dart';
 import 'components/activity_list.dart';
 import 'components/message_item.dart';
 

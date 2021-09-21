@@ -4,7 +4,7 @@ import '../../../components/primary_button/primary_button.dart';
 import '../../../components/secondary_button/secondary_button.dart';
 import '../../../components/text_field/text_field.dart';
 import '../../../constants.dart';
-import '../../../tabs/tabs.dart';
+import '../../tabs/tabs.dart';
 import '../components/image_logo.dart';
 import '../request_password/request_password.dart';
 import '../sign_up/sign_up.dart';
