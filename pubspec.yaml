@@ -14,12 +14,21 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+  flutter_svg: ^0.22.0
+  flutter_native_splash: ^1.2.3
+  curved_navigation_bar: ^1.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^1.0.0
+  flutter_launcher_icons: "^0.9.2"
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/icon.png"
 
 flutter:
 
@@ -27,6 +36,7 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/images/user-pics/
 
   fonts:
     - family: Comfortaa
@@ -36,3 +46,9 @@ flutter:
           weight: 700
         - asset: assets/fonts/Comfortaa-Light.ttf
           weight: 300
+
+flutter_native_splash:
+  color: "#7437AA"
+  image: assets/images/splash.png
+  #color_dark: "#202328"
+  fullscreen: true

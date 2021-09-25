@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'routes.dart';
+import 'theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,9 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Bubble Chat',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: lightThemeData(context),
+      darkTheme: darkThemeData(context),
       initialRoute: '/',
       routes: routesList,
     );

@@ -11,3 +11,6 @@ const dangerColor = Color(0XFFfA4358);
 
 // Margin and Padding
 const defaultSpacing = 16.0;
+
+// Duration of animation
+const defaultDuration = Duration(milliseconds: 250);
