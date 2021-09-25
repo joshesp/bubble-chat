@@ -1,4 +1,5 @@
 import 'package:bubble_chat/dummy_data/messages_data.dart';
+import 'package:bubble_chat/views/chat/chat.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
@@ -40,7 +41,9 @@ class MessagesView extends StatelessWidget {
                   isActive: messagesListData[index]['active'],
                 ),
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pushNamed(ChatView.routeName);
+              },
             ),
           ),
         ),
