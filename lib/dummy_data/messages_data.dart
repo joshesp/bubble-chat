@@ -7,7 +7,7 @@ const List<Map<String, dynamic>> messagesListData = [
     'userId': 1,
     'image': 'assets/images/user-pics/image-1.png',
     'lastMessage': 'Various versions have evolved over the years',
-    'statusMessage': 'no-reading',
+    'status': 'no-reading',
     'messagesNoReading': 1,
     'date': 1631836386247
   },
@@ -18,7 +18,7 @@ const List<Map<String, dynamic>> messagesListData = [
     'image': 'assets/images/user-pics/image-2.png',
     'lastMessage':
         'Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)',
-    'statusMessage': 'no-reading',
+    'status': 'no-reading',
     'messagesNoReading': 2,
     'date': 1631836352254
   },
@@ -29,7 +29,7 @@ const List<Map<String, dynamic>> messagesListData = [
     'image': 'assets/images/user-pics/image-3.png',
     'lastMessage':
         'Various versions have evolved over the years, sometimes by accident',
-    'statusMessage': 'no-reading',
+    'status': 'no-reading',
     'messagesNoReading': 0,
     'date': 1631762072000
   },
@@ -40,7 +40,7 @@ const List<Map<String, dynamic>> messagesListData = [
     'image': 'assets/images/user-pics/image-4.png',
     'lastMessage':
         'Various versions have evolved over the years, sometimes by accident',
-    'statusMessage': 'no-reading',
+    'status': 'no-reading',
     'messagesNoReading': 0,
     'date': 1631756672000
   },
@@ -51,7 +51,7 @@ const List<Map<String, dynamic>> messagesListData = [
     'image': 'assets/images/user-pics/image-5.png',
     'lastMessage':
         'Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)',
-    'statusMessage': 'no-reading',
+    'status': 'no-reading',
     'messagesNoReading': 0,
     'date': 1631745600000
   },
@@ -62,7 +62,7 @@ const List<Map<String, dynamic>> messagesListData = [
     'image': 'assets/images/user-pics/image-6.png',
     'lastMessage':
         'Various versions have evolved over the years, sometimes by accident',
-    'statusMessage': 'no-reading',
+    'status': 'no-reading',
     'messagesNoReading': 0,
     'date': 1631736000000
   },
@@ -73,7 +73,7 @@ const List<Map<String, dynamic>> messagesListData = [
     'image': 'assets/images/user-pics/image-7.png',
     'lastMessage':
         'Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)',
-    'statusMessage': 'no-reading',
+    'status': 'no-reading',
     'messagesNoReading': 0,
     'date': 1631649600000
   }
@@ -114,83 +114,94 @@ const List<Map<String, dynamic>> lastActivityList = [
 
 const List<Map<String, dynamic>> chatMessages = [
   {
-    'message':
-        'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock',
-    'type': 'text',
-    'urlMedia': null,
-    'user': 'John Mac',
-    'active': true,
-    'userId': 7,
-    'image': 'assets/images/user-pics/image-7.png',
-    'date': 1631736000000,
-    'statusMessage': 'reading'
+    'date': 'yesterday',
+    'messages': [
+      {
+        'message':
+            'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock',
+        'type': 'text',
+        'urlMedia': null,
+        'user': 'John Mac',
+        'active': true,
+        'userId': 7,
+        'image': 'assets/images/user-pics/image-7.png',
+        'date': 1631736000000,
+        'status': 'reading'
+      },
+      {
+        'message':
+            'There are many variations of passages of Lorem Ipsum available',
+        'type': 'text',
+        'urlMedia': null,
+        'user': 'Mar Andy',
+        'active': true,
+        'userId': 8,
+        'image': 'assets/images/user-pics/image-8.png',
+        'date': 1631745600000,
+        'status': 'reading'
+      },
+      {
+        'message':
+            'The standard chunk of Lorem Ipsum used since the 1500s is reproduced',
+        'type': 'text',
+        'urlMedia': null,
+        'user': 'John Mac',
+        'active': true,
+        'userId': 7,
+        'image': 'assets/images/user-pics/image-7.png',
+        'date': 1631836451370,
+        'status': 'reading'
+      },
+      {
+        'message':
+            'Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc',
+        'urlMedia': null,
+        'type': 'text',
+        'user': 'Mar Andy',
+        'active': true,
+        'userId': 8,
+        'image': 'assets/images/user-pics/image-8.png',
+        'date': 1631836464069,
+        'status': 'reading'
+      },
+    ]
   },
   {
-    'message': 'There are many variations of passages of Lorem Ipsum available',
-    'type': 'text',
-    'urlMedia': null,
-    'user': 'Mar Andy',
-    'active': true,
-    'userId': 8,
-    'image': 'assets/images/user-pics/image-8.png',
-    'date': 1631745600000,
-    'statusMessage': 'reading'
-  },
-  {
-    'message':
-        'The standard chunk of Lorem Ipsum used since the 1500s is reproduced',
-    'type': 'text',
-    'urlMedia': null,
-    'user': 'John Mac',
-    'active': true,
-    'userId': 7,
-    'image': 'assets/images/user-pics/image-7.png',
-    'date': 1631836451370,
-    'statusMessage': 'reading'
-  },
-  {
-    'message':
-        'Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc',
-    'urlMedia': null,
-    'type': 'text',
-    'user': 'Mar Andy',
-    'active': true,
-    'userId': 8,
-    'image': 'assets/images/user-pics/image-8.png',
-    'date': 1631836464069,
-    'statusMessage': 'reading'
-  },
-  {
-    'message': null,
-    'urlMedia': 'http://audio.com',
-    'type': 'audio',
-    'user': 'Mar Andy',
-    'active': true,
-    'userId': 8,
-    'image': 'assets/images/user-pics/image-8.png',
-    'date': 1631836494408,
-    'statusMessage': 'reading'
-  },
-  {
-    'message': null,
-    'urlMedia': 'http://iamge.com',
-    'type': 'image',
-    'user': 'John Mac',
-    'active': true,
-    'userId': 7,
-    'image': 'assets/images/user-pics/image-7.png',
-    'date': 1631836527170,
-    'statusMessage': 'reading'
-  },
-  {
-    'message': null,
-    'urlMedia': 'http://video.com',
-    'type': 'video',
-    'user': 'Mar Andy',
-    'active': true,
-    'userId': 8,
-    'image': 'assets/images/user-pics/image-8.png',
-    'date': 1631836549184,
-    'statusMessage': 'error'
+    'date': 'today',
+    'messages': [
+      {
+        'message': null,
+        'urlMedia': 'http://audio.com',
+        'type': 'audio',
+        'user': 'Mar Andy',
+        'active': true,
+        'userId': 8,
+        'image': 'assets/images/user-pics/image-8.png',
+        'date': 1631836494408,
+        'status': 'error'
+      },
+      {
+        'message': null,
+        'urlMedia': 'https://dummyimage.com/600x400/000/ffffff',
+        'type': 'image',
+        'user': 'John Mac',
+        'active': true,
+        'userId': 7,
+        'image': 'assets/images/user-pics/image-7.png',
+        'date': 1631836527170,
+        'status': 'reading'
+      },
+      {
+        'message': null,
+        'urlMedia': 'http://video.com',
+        'type': 'video',
+        'user': 'Mar Andy',
+        'active': true,
+        'userId': 8,
+        'image': 'assets/images/user-pics/image-8.png',
+        'date': 1631836549184,
+        'status': 'sending'
+      }
+    ]
   }
 ];
