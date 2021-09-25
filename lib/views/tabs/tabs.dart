@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../components/user_avatar/user_avatar.dart';
 import '../../constants.dart';
+import '../../utils/app_bar.dart';
 import 'contacts/contacts.dart';
 import 'messages/messages.dart';
 import 'profile/profile.dart';
@@ -26,7 +27,10 @@ class _TabsViewState extends State<TabsView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBar(context),
+      appBar: appBar(
+        context,
+        Text(_pages[_currPageIndex]['title']),
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(defaultSpacing),
@@ -85,23 +89,6 @@ class _TabsViewState extends State<TabsView> {
         color: Colors.white,
       ),
       backgroundColor: _currPageIndex == 2 ? dangerColor : primaryColor,
-    );
-  }
-
-  AppBar appBar(BuildContext context) {
-    return AppBar(
-      title: Text(_pages[_currPageIndex]['title']),
-      elevation: 0,
-      foregroundColor:
-          MediaQuery.of(context).platformBrightness == Brightness.light
-              ? secondaryColor
-              : Colors.white,
-      backgroundColor:
-          MediaQuery.of(context).platformBrightness == Brightness.light
-              ? Colors.white
-              : darkColor,
-      titleTextStyle: Theme.of(context).textTheme.headline5,
-      centerTitle: false,
     );
   }
 }

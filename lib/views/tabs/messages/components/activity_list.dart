@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../components/user_avatar/user_avatar.dart';
 import '../../../../constants.dart';
 import '../../../../dummy_data/messages_data.dart';
-import '../../../../helpers/strings_helper.dart';
+import '../../../../utils/strings_helper.dart';
 
 class ActivityListComponent extends StatelessWidget {
   const ActivityListComponent({Key? key}) : super(key: key);

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../constants.dart';
 import '../../dummy_data/messages_data.dart';
-import '../../helpers/app_bar.dart';
+import '../../utils/app_bar.dart';
 import 'components/app_bar.dart';
 import 'components/bubble_container.dart';
 import 'components/message_input_field.dart';
