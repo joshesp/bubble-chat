@@ -26,7 +26,7 @@ En el archivo [INSTALLATION.md](./INSTALLATION.md) se describe la versión de Fl
 - **[curved_navigation_bar](https://pub.dev/packages/curved_navigation_bar)** - Para agregar un **Navigation bar** cool.
 - **[flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons)** - Para generar los **Iconos** de la aplicación.
 
-### Licencias
+### Recursos/Licencias
 
 - [unDraw](https://undraw.co/illustrations) - Para imágenes (SVG/PNG).
 - [dummyimage](https://dummyimage.com/) - Generador de imágenes dummy.
